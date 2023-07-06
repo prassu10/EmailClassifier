@@ -203,7 +203,7 @@ def action_detection(input_mail):
 
 ps = PorterStemmer()
 
-with open("design.css") as source_design:
+with open("style.css") as source_design:
     st.markdown(f"<style>{source_design.read()}</style>", unsafe_allow_html=True)
     
 st.title("Email Classifier")
