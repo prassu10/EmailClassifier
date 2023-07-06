@@ -204,8 +204,13 @@ ps = PorterStemmer()
 
 with open("style.css") as source_design:
     st.markdown(f"<style>{source_design.read()}</style>", unsafe_allow_html=True)
-    
-st.title("Email Classifier")
+
+def separate_class_title(title, class1, class2):
+    styled_title = f'<div><span class="{class1}">{title.split()[0]}</span> <span class="{class2}">{title.split()[1]}</span></div>'
+    st.markdown(styled_title, unsafe_allow_html=True)
+
+# Usage
+separate_class_title("<h1>Email Classifier</h1>", 'class1', 'class2')
 
 input_sms = st.text_area("",placeholder="Type your email here...")
 
