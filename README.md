@@ -7,7 +7,7 @@ I collected a labeled dataset of emails and preprocessed the data to extract rel
 I used NLP techniques and ML algorithms for language detection, spam detection, tone identification, action categorization, and urgency prioritization.<br> 
 I evaluated the performance of our system using appropriate evaluation metrics, such as accuracy, precision, recall, and F1-score, and fine-tuned our algorithms to improve performance.<br>
 By including these features in our approach, I aim to improve the efficiency and productivity of email management for individuals and organizations. <br>
-MY solution is scalable and customizable, and we believe it has the potential to significantly enhance email management and streamline the communication process.
+My solution is scalable and customizable, and we believe it has the potential to significantly enhance email management and streamline the communication process.
 
 
 
