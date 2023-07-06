@@ -1,5 +1,5 @@
 # Email Classifier
-<a href="#">https://emailclassifier.streamlit.app/</a>
+<a href="#">https://emailclassifier.streamlit.app/</a><br>
 The problem is to build an email categorization system that accurately classifies incoming emails based on language, spam, tone, action, and urgency. <br>
 The solution should adapt to new kinds of emails, and learn from user feedback and adjust the categorization accordingly.<br>
 The goal is to create an efficient and effective system for automatically organizing and prioritizing emails, which can help users to save time and reduce the risk of missing important messages.<br>
