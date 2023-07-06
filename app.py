@@ -203,6 +203,9 @@ def action_detection(input_mail):
 
 ps = PorterStemmer()
 
+with open("style.css") as source_design:
+    st.markdown(f"<style>{source_design.read()}</style>", unsafe_allow_html=True)
+
 st.title("Email Classifier (Spam, Tone, Action)")
 
 input_sms = st.text_area("Enter the message")
