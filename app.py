@@ -230,7 +230,7 @@ if st.button('Predict'):
     if result == 1:
         st.subheader("Reply Mail")
     elif result == 0:
-        st.subheader("Neutrals Mail")
+        st.subheader("Neutral Mail")
     elif result == -1:
         st.subheader("Forward Mail")
     elif result == 5:
