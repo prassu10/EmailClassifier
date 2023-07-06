@@ -207,7 +207,7 @@ with open("style.css") as source_design:
     
 st.title("Email Classifier")
 
-input_sms = st.text_area("Enter The Mail Content:")
+input_sms = st.text_area("Enter The Mail Content:", placeholder="Type your email here...")
 
 if st.button('Predict'):
     result=spam_detection(input_sms)
