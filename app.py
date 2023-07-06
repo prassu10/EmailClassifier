@@ -101,7 +101,6 @@ def spam_detection(input_mail):
     input_data_features = feature_extraction.transform(input_mail)
     # making prediction
     prediction = model.predict(input_data_features)
-    print(int(prediction),end=' ')
     if (prediction[0]==1):
         return 1
     else:
