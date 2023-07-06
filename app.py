@@ -212,34 +212,31 @@ input_sms = st.text_area("",placeholder="Type your email here...")
 if st.button('Predict'):
     result=spam_detection(input_sms)
     if result == 1:
-        st.text("Not Spam Mail")
+        st.text("Spam Info: Not Spam Mail")
     elif result == 0:
-        st.text("Spam Mail")
-    else:
-        st.text("Nat Spam Mail")
-
+        st.text("Spam Info: Spam Mail")
 
     result = tone_detection(input_sms)
     if result == 1:
-        st.text("Positive Sentiment")
+        st.text("Tone Info: Positive Sentiment")
     elif result == 0:
-        st.text("Neutral Sentiment")
+        st.text("Tone Info: Neutral Sentiment")
     else:
-        st.text("Negative Sentiment")
+        st.text("Tone Info: Negative Sentiment")
         
 
     result = action_detection(input_sms)
     if result == 1:
-        st.text("Reply Mail")
+        st.text("Action Info: Reply Mail")
     elif result == 0:
-        st.text("Neutral Mail")
+        st.text("Action Info: Neutral Mail")
     elif result == -1:
-        st.text("Forward Mail")
+        st.text("Action Info: Forward Mail")
     elif result == 5:
-        st.text("Neutral Mail, Reply Mail, Forward Mail")
+        st.text("Action Info: Neutral Mail, Reply Mail, Forward Mail")
     elif result == 4:
-        st.text("Neutral Mail, Forward Mail")
+        st.text("Action Info: Neutral Mail, Forward Mail")
     elif result == 3:
-        st.text("Forward Mail, Reply Mail")
+        st.text("Action Info: Forward Mail, Reply Mail")
     elif result == 2:
-        st.text("Neutral Mail, Reply Mail")
+        st.text("Action Info: Neutral Mail, Reply Mail")
