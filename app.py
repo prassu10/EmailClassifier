@@ -203,44 +203,44 @@ def action_detection(input_mail):
 
 ps = PorterStemmer()
 
-with open("style.css") as source_design:
+with open("design.css") as source_design:
     st.markdown(f"<style>{source_design.read()}</style>", unsafe_allow_html=True)
-
+    
 st.title("Email Classifier")
 
-input_sms = st.text_area("Enter The Mail Content")
+input_sms = st.text_area("Enter the message")
 
 if st.button('Predict'):
     result=spam_detection(input_sms)
     if result == 1:
-        st.subheader("Not Spam Mail")
+        st.text("Not Spam Mail")
     elif result == 0:
-        st.subheader("Spam Mail")
+        st.text("Spam Mail")
     else:
-        st.subheader("Nat Spam Mail")
+        st.text("Nat Spam Mail")
 
 
     result = tone_detection(input_sms)
     if result == 1:
-        st.subheader("Positive Sentiment")
+        st.text("Positive Sentiment")
     elif result == 0:
-        st.subheader("Neutral Sentiment")
+        st.text("Neutral Sentiment")
     else:
-        st.subheader("Negative Sentiment")
+        st.text("Negative Sentiment")
         
 
     result = action_detection(input_sms)
     if result == 1:
-        st.subheader("Reply Mail")
+        st.text("Reply Mail")
     elif result == 0:
-        st.subheader("Neutral Mail")
+        st.text("Neutral Mail")
     elif result == -1:
-        st.subheader("Forward Mail")
+        st.text("Forward Mail")
     elif result == 5:
-        st.subheader("Neutral Mail, Reply Mail, Forward Mail")
+        st.text("Neutral Mail, Reply Mail, Forward Mail")
     elif result == 4:
-        st.subheader("Neutral Mail, Forward Mail")
+        st.text("Neutral Mail, Forward Mail")
     elif result == 3:
-        st.subheader("Forward Mail, Reply Mail")
+        st.text("Forward Mail, Reply Mail")
     elif result == 2:
-        st.subheader("Neutral Mail, Reply Mail")
+        st.text("Neutral Mail, Reply Mail")
