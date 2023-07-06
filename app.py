@@ -214,7 +214,7 @@ separate_class_title("<h1>Email Classifier</h1>", 'class1', 'class2')
 
 input_sms = st.text_area("",placeholder="Type your email here...")
 
-if st.button('Predict'):
+if st.button('Analyze'):
     result=spam_detection(input_sms)
     if result == 1:
         st.text("Spam Info: Not Spam Mail")
