@@ -234,14 +234,14 @@ if st.button('Predict'):
     if result == 1:
         st.text("Action: Reply Mail")
     elif result == 0:
-        st.text("Action: Neutral Mail")
+        st.text("Action: Neutral")
     elif result == -1:
         st.text("Action: Forward Mail")
     elif result == 5:
-        st.text("Action: Neutral Mail, Reply Mail, Forward Mail")
+        st.text("Action: Neutral, Reply Mail, Forward Mail")
     elif result == 4:
-        st.text("Action: Neutral Mail, Forward Mail")
+        st.text("Action: Neutral, Forward Mail")
     elif result == 3:
         st.text("Action: Forward Mail, Reply Mail")
     elif result == 2:
-        st.text("Action: Neutral Mail, Reply Mail")
+        st.text("Action: Neutral, Reply Mail")
