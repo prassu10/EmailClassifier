@@ -1,2 +1,2 @@
 scikit-learn
-ntlk
+nltk==3.5
