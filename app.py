@@ -223,25 +223,25 @@ if st.button('Predict'):
 
     result = tone_detection(input_sms)
     if result == 1:
-        st.text("Tone Info: Positive Sentiment")
+        st.text("Tone: Positive Sentiment")
     elif result == 0:
-        st.text("Tone Info: Neutral Sentiment")
+        st.text("Tone: Neutral Sentiment")
     else:
-        st.text("Tone Info: Negative Sentiment")
+        st.text("Tone: Negative Sentiment")
         
 
     result = action_detection(input_sms)
     if result == 1:
-        st.text("Action Info: Reply Mail")
+        st.text("Action: Reply Mail")
     elif result == 0:
-        st.text("Action Info: Neutral Mail")
+        st.text("Action: Neutral Mail")
     elif result == -1:
-        st.text("Action Info: Forward Mail")
+        st.text("Action: Forward Mail")
     elif result == 5:
-        st.text("Action Info: Neutral Mail, Reply Mail, Forward Mail")
+        st.text("Action: Neutral Mail, Reply Mail, Forward Mail")
     elif result == 4:
-        st.text("Action Info: Neutral Mail, Forward Mail")
+        st.text("Action: Neutral Mail, Forward Mail")
     elif result == 3:
-        st.text("Action Info: Forward Mail, Reply Mail")
+        st.text("Action: Forward Mail, Reply Mail")
     elif result == 2:
-        st.text("Action Info: Neutral Mail, Reply Mail")
+        st.text("Action: Neutral Mail, Reply Mail")
